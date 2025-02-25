@@ -1,0 +1,103 @@
+body {
+    background-color: #3f3e3e !important;
+}
+.card {
+    border: 1px solid white !important;
+}
+#card1 {
+    background-color: #3d3b3b;
+    color: white;
+}
+#card2 {
+    background-color: #333131;
+    color: white;
+}
+#crud {
+    width: 100%;
+    max-width: 100px;
+}
+table {
+    width: 100%;
+}
+
+td {
+    word-wrap: break-word;
+    white-space: normal;
+    max-width: 300px;
+    overflow-wrap: break-word;
+}
+
+.card-body {
+    width: 100%;
+    overflow: hidden;
+}
+.page-item.disabled, .page-link {
+    background-color: #333131 !important;
+    color: white !important;
+}
+.btn-info {
+    color: white !important;
+}
+#card-control {
+    display: flex;
+    justify-content: center;
+}
+
+/* Açıklama kısıtlaması */
+.description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.5em; /* Satır yüksekliği */
+    max-height: 3em; /* 2 satır yüksekliğine karşılık gelir (2 * line-height) */
+    transition: max-height 0.3s ease;
+}
+
+.description.expanded {
+    max-height: none; /* Tam uzunlukta görünmesini sağlar */
+}
+
+.read-more {
+    display: none;
+    color: blue;
+    cursor: pointer;
+}
+
+.description.expanded + .read-more {
+    display: inline; /* expanded class'ı eklenince 'devamını oku' bağlantısı görünür */
+}
+
+#no-product{
+    color: white;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 765px) {
+    table, thead, tbody, th, td {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+    table {
+        width: 100%;
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 358px) {
+    #button1 {
+        float: right;
+        height: 35px;
+    }
+    #button2 {
+        float: right;
+        height: 35px;
+        margin-left: 100px;
+    }
+}
